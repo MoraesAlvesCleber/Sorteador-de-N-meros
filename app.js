@@ -6,6 +6,11 @@ function sortear(){
     let sorteados = [];
     let numero;
 
+    if (de >= ate || quantidade > ate) {
+        alert('Campo "Do número" e "Quantidade de números" deve ser inferior ao campo "Até o número". Verifique!');
+        return;
+      }
+    
     for(let i = 0; i < quantidade; i++){
         numero = obterNumeroAleatorio(de,ate);
 
